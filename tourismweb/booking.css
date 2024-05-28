@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111317;
+    color: #333;
+}
+
+header {
+    color: #f6890d;
+    text-align: center;
+    padding: 1em 0;
+    font-family: "Sacramento", cursive;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+header h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 3px;
+    width: 393px;
+    background-color: #f6890d;
+    border-radius: 5px;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+}
+
+.tourism-site {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    max-width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    font-family: "Sacramento", cursive;
+    cursor: pointer;
+}
+
+.tourism-site:hover {
+    transform: translateY(-10px);
+}
+
+.tourism-site img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f6890d;
+}
+
+.tourism-site h2 {
+    margin: 0.5em 0;
+}
+
+.tourism-site p {
+    padding: 0 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.price {
+    font-weight: bold;
+    color: #f6890d;
+    margin-bottom: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+.booking-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 44%;
+    transform: translate(-50%, -50%);
+    background-color: #111317;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: white;
+}
+.booking-form h2 {
+    margin-top: 0;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    color: #f6890d;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    margin-top: 31px;
+}
+
+.booking-form input {
+    padding: 6px;
+    margin-top: 12px;
+}
+
+.booking-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f6890d;
+    font-family: "Sacramento", cursive;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.booking-form button:hover {
+    background-color: #4a3e30;
+}
